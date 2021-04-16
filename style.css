@@ -128,3 +128,83 @@ figcaption {
     flex-basis: calc((100% - 20px) / 2);
   }
 }
+/*hra*/
+.hra__body {
+  max-width: 80vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hrajTop {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+.hrajeKolecko {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+  padding-left: 10px;
+}
+.ikonky {
+  margin-left: auto;
+  display: flex;
+}
+
+.domecek,
+.restart {
+  margin: 5px 5px 7px 5px;
+  padding: 8px 8px 0 8px;
+  border-radius: 5px;
+}
+
+.domecek {
+  background-color: #1fcca4;
+}
+
+a.domecek:hover,
+a.domecek:focus,
+a.domecek:active {
+  background-color: #1cbb96;
+}
+
+.restart {
+  background-color: #0197f6;
+}
+
+a.restart:hover,
+a.restart:focus,
+a.restart:active {
+  background-color: #0090e9;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.board button {
+  border: 1px solid black;
+  flex-basis: 10%;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: rgb(252, 252, 252);
+}
+
+button:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+/*
+https: ; //spin.atomicobject.com/2015/07/14/css-responsive-square/ - content*/
