@@ -150,6 +150,7 @@ h2 {
   filter: invert(100%);
   padding-left: 10px;
 }
+
 .ikonky {
   margin-left: auto;
   display: flex;
@@ -185,21 +186,24 @@ a.restart:active {
 .board {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  width: 80vmin;
+  height: 80vmin;
   border: 1px solid black;
+  background-color: rgba(245, 245, 245, 0.4);
 }
 
 .board button {
   border: 1px solid black;
   flex-basis: 10%;
+  background-color: transparent;
 }
 
 button:hover,
 button:focus,
 button:active {
-  background-color: rgb(252, 252, 252);
+  background-color: rgba(245, 245, 245, 0.6);
 }
-
+/*
 button:after {
   content: '';
   display: block;
@@ -208,3 +212,16 @@ button:after {
 
 /*
 https: ; //spin.atomicobject.com/2015/07/14/css-responsive-square/ - content*/
+.kolecko {
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.krizek {
+  background-image: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
