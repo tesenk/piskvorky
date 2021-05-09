@@ -213,15 +213,22 @@ button:after {
 /*
 https: ; //spin.atomicobject.com/2015/07/14/css-responsive-square/ - content*/
 .kolecko {
-  background-image: url(images/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(images/circle.svg) center no-repeat;
   background-size: 70%;
+  animation: scale 0.15s linear;
 }
 
 .krizek {
-  background-image: url(images/cross.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(images/cross.svg) center no-repeat;
   background-size: 70%;
+  animation: scale 0.15s linear;
+}
+
+@keyframes scale {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 70%;
+  }
 }
